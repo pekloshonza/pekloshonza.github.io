@@ -1,0 +1,1091 @@
+*{
+    margin: auto;
+    scroll-behavior: smooth;
+}
+#menu ul{
+    list-style-type: none; 
+    margin: 0;
+    overflow: hidden;
+    background-color: #302a2a;
+    opacity: 0.8;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 8%;
+    padding: 0;
+    }
+    #menu ul li{
+    float: left;
+    display: inline;
+    text-align: left;
+    position:relative;
+    left:20%;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    opacity: 0;
+    }
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    nav a{
+        display: block;
+        padding: 20px 30px;
+        text-decoration: none;
+        text-align: center;
+        font-size: x-large;
+        color: rgb(255, 255, 255);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    nav a:hover{
+        color: #8d6262;
+    }
+    
+    nav a::before{
+        content: '';
+        position: absolute;
+        width:0;
+        height:2px;
+        background-color: #916666;
+        left: 10px;
+        bottom: 15px;
+        transition: 0.3s all ease-out;
+    }
+    
+    nav a:hover::before{
+        width: 80%;
+        left: 10px;
+    }
+    .greeting{
+        font: bolder;
+        position: absolute;
+        top: 15%;
+        left: 25%;
+        color: rgb(224, 116, 116);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 100px;
+        text-shadow: white 4px 4px 12px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 1);
+    }
+    h2{
+        position: absolute;
+        top: 30%;
+        color: rgb(224, 116, 116);
+        left: 45%;
+        font-size: 100px;
+        font-weight: bolder;
+        z-index: 2;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-shadow: white 4px 4px 12px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(0, 0, 0, 1);
+    }
+
+.child{
+    position: fixed;
+    display: block;
+    border-radius: 50%;
+    top: 0;
+    left: 47%;
+    width: 5%;
+    height: 8%;
+    overflow: hidden;
+}
+
+.child img{
+    transform: scale(1.3);
+    transition: .2s ease-in-out;
+}
+.child:hover img{
+    transform: scale(1);
+}
+.slider-container {
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    opacity: 0.7;
+  }
+  
+  #slide-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+#arrow{
+    position: absolute;
+    border-radius: 20%;
+    width: 8%;
+    height: 6%;
+    bottom: 1%;
+    left: 46%;
+    font-size: x-large;
+    cursor: pointer;
+    transition: .2s ease-out;
+}
+#arrow:hover{
+    transform: scale(1.1);
+}
+#arrow:active{
+    background-color: red;
+}
+
+
+#part2{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(184, 151, 151);
+    opacity: 1;
+    position: absolute;
+    top: 100%;
+    z-index: -10;
+    display: inline-block;
+    align-content: center;
+    
+}
+
+
+.arnold{
+    background-image: url(Arnold-Schwarzenegger-Instagram-01-042823-38439857cce7410ba8bec591590100d0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 680px; 
+    display: flex;
+    border-radius: 10%; 
+    border: 2px solid black;
+    position: absolute; 
+    left: 37%;
+    top: 200px;
+}
+.arnold img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 19%;
+}
+.arnold:hover{
+    transform: translateY(25px); 
+    transition: transform 1s; 
+}
+
+.sulek{
+    background-image: url(sulekposter.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 680px; 
+    display: flex;
+    border-radius: 10%; 
+    border: 2px solid black;
+    position: absolute;
+    left: 70%;
+    top: 200px;
+}
+.sulek img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 19%;
+}
+.sulek:hover{
+    transform: translateY(25px); 
+    transition: transform 1s; 
+}
+.ourtrainers{
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 700px;
+    color: rgb(0, 0, 0);    
+}
+
+.content1{
+    border-radius:9%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+    transition: 0.6s;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    color:#ffffff;
+    font-size: large;
+    text-align: center; 
+}
+.content1:hover{
+    opacity: 1;
+}
+.trentwin{
+    background-image: url(tren.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 680px; 
+    display: flex;
+    border-radius: 10%; 
+    border: 2px solid black;
+    position: absolute;
+    left: 4%;
+    top: 200px;
+}
+.trentwin img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    border-radius: 19%;
+}
+.trentwin:hover{
+    transform: translateY(25px); 
+    transition: transform 1s; 
+}
+
+.mikebg{
+    background-color: rgb(134, 223, 226);
+}
+
+.trentwins{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(maxresdefault.jpg);
+    width: 80%;
+    height: 95%; 
+    border-radius: 10%; 
+    border: 2px solid black;
+    position: absolute;
+    opacity: 1;
+    left: 10%;
+    top: 2%;
+}
+.mike3{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(tren.jpg);
+    width:270px;
+    height: 400px; 
+    border-radius: 10px;
+    border: 10px solid black;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    z-index: 1;
+}
+.button{
+    width: 290px;
+    height: 30px;
+    background-color: rgb(179, 19, 19);
+    position: absolute;
+    left: 15%;
+    top: 58%;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 10px;
+    transition: transform 1s ;
+}
+.youtube{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: x-large;
+    color: white;
+}
+.youtubeICON{
+    position: absolute;
+    left: 19%;
+    top: -3%;
+    transition: transform 1s ;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+.ukazky1mike{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    opacity:1;
+}
+
+.ukazky1mike1{
+ position: relative;
+border-radius: 10px;
+left: 10%;
+transition: transform 2s;
+}
+.ukazky2mike1{
+position: relative;
+border-radius: 10px;
+left: 15%;
+transition: transform 2s;
+}
+.ukazky3mike1{
+    position: relative;
+ border-radius: 10px;
+ left: 20%;
+ transition: transform 2s;
+}
+.ukazky4mike1{
+    position: relative;
+border-radius: 10px;
+left: 25%;
+transition: transform 2s;
+}
+.ukazky5mike1{
+    position: relative;
+    border-radius: 10px;
+    left: 30%;
+    transition: transform 2s;
+}
+
+.ukazky1mike1:hover{
+    transform: scale(1.2);
+}
+.ukazky2mike1:hover{
+    transform: scale(1.2);
+}
+.ukazky3mike1:hover{
+    transform: scale(1.2);
+}
+.ukazky4mike1:hover{
+    transform: scale(1.2);
+}
+.ukazky5mike1:hover{
+    transform: scale(1.2);
+}
+.nazevmike{
+position: absolute;
+font-size:450%;
+font-family: sans-serif;
+color: white;
+font-weight: bold;
+z-index: 2;
+left: 45%;
+top: 10%;
+text-align: center;
+width: 50%;
+}
+
+.mikediplom{
+    position: absolute;
+    top: 65%;;
+    left: 62%;
+    border-right:solid grey 2px;
+    height: 25px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 10px;
+}
+
+.mikeporadce{
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    border-right:solid grey 2px;
+    height: 25px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 10px;
+}
+
+.miketrener{
+    position: absolute;
+    top: 65%;
+    left: 78%;
+    border-right:solid grey 2px;
+    height: 25px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.trenermike{
+    position: absolute;
+    font-size:450%;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+    left: 48%;
+    top: 15%;
+    text-align: center;
+    width: 50%;
+    }
+    
+.mikepopis{
+    position: absolute;
+    top: 30%;
+    left: 58%;
+    color: rgb(255, 216, 216);
+    font-family: sans-serif;
+    font-weight:bolder; 
+    font-size: larger;
+    border-left:solid rgb(163, 163, 163) 2px;
+    width: 25%;
+    padding-left:10px ;
+ 
+}
+.white{
+    color: white;
+    padding-bottom:10px ;
+}
+
+
+.sulekobrz{
+    position: absolute;
+    left: 15.6%;
+    top: 75%;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.sulekbg{
+    background-color: rgb(41, 58, 40);
+}
+
+.sulek1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(Is-Sam-Sulek-Natty.jpg);
+    width: 80%;
+    height: 95%; 
+    border-radius: 10%; 
+    border: 2px solid black;
+    position: absolute;
+    opacity: 1;
+    left: 10%;
+    top: 2%;
+}
+.sulek3{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(sulekposter.jpg);
+    width:270px;
+    height: 400px; 
+    border-radius: 10px;
+    border: 10px solid black;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    z-index: 1;
+}
+.button{
+    width: 290px;
+    height: 30px;
+    background-color: rgb(179, 19, 19);
+    position: absolute;
+    left: 15%;
+    top: 58%;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 10px;
+    transition: transform 1s ;
+}
+.youtube{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: x-large;
+    color: white;
+}
+.youtubeICON{
+    position: absolute;
+    left: 19%;
+    top: -3%;
+    transition: transform 1s ;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+.ukazky1sulek{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    opacity:1;
+}
+
+.ukazky1sulek1{
+ position: relative;
+border-radius: 10px;
+left: 10%;
+transition: transform 2s;
+}
+.ukazky2sulek1{
+position: relative;
+border-radius: 10px;
+left: 15%;
+transition: transform 2s;
+}
+.ukazky3sulek1{
+    position: relative;
+ border-radius: 10px;
+ left: 20%;
+ transition: transform 2s;
+}
+.ukazky4sulek1{
+    position: relative;
+border-radius: 10px;
+left: 25%;
+transition: transform 2s;
+}
+.ukazky5sulek1{
+    position: relative;
+    border-radius: 10px;
+    left: 30%;
+    transition: transform 2s;
+}
+
+.ukazky1sulek1:hover{
+    transform: scale(1.2);
+}
+.ukazky2sulek1:hover{
+    transform: scale(1.2);
+}
+.ukazky3sulek1:hover{
+    transform: scale(1.2);
+}
+.ukazky4sulek1:hover{
+    transform: scale(1.2);
+}
+.ukazky5sulek1:hover{
+    transform: scale(1.2);
+}
+.nazevsulek{
+position: absolute;
+font-size:450%;
+font-family: sans-serif;
+color: white;
+font-weight: bold;
+z-index: 2;
+left: 45%;
+top: 10%;
+text-align: center;
+width: 50%;
+}
+
+.sulekdiplom{
+    position: absolute;
+    top: 65%;;
+    left: 63%;
+    border-right:solid grey 2px;
+    border-left: solid grey 2px;
+    height: 25px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 10px;
+}
+
+.sulekporadce{
+    position: absolute;
+    top: 65%;
+    left: 71%;
+    border-right:solid grey 2px;
+    height: 25px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 10px;
+}
+
+.sulektrener{
+    position: absolute;
+    top: 65%;
+    left: 79%;
+    border-right:solid grey 2px;
+    height: 25px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+
+.trenersulek{
+    position: absolute;
+    font-size:450%;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+    left: 48%;
+    top: 15%;
+    text-align: center;
+    width: 50%;
+    }
+    
+.sulekpopis{
+    position: absolute;
+    top: 25%;
+    left: 63%;
+    color: rgb(245, 117, 117);
+    font-family: sans-serif;
+    font-size: large;
+    font-weight:bolder; 
+    border-left:solid white 2px;
+    width: 25%;
+    padding-left:10px ;
+    text-shadow: rgb(236, 154, 154) 4px 4px 12px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(233, 143, 143);
+
+}
+.white{
+    color: white;
+    padding-bottom:10px ;
+}
+
+
+.sulekobrz{
+    position: absolute;
+    left: 15.6%;
+    top: 75%;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.mikeobrz{
+    position: absolute;
+    left: 15.6%;
+    top: 75%;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+
+.sulekobrz{
+    position: absolute;
+    left: 15.6%;
+    top: 75%;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.arnoldbg{
+    background-color: rgb(44, 28, 59);
+}
+
+.arnold1{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(arnold.jpg);
+    width: 80%;
+    height: 95%; 
+    border-radius: 10%; 
+    border: 2px solid black;
+    position: absolute;
+    opacity: 1;
+    left: 10%;
+    top: 2%;
+}
+.arnold3{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(mh-5-30-arnold-647613c216276.jpg);
+    width:270px;
+    height: 400px; 
+    border-radius: 10px;
+    border: 10px solid black;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    z-index: 1;
+}
+.button{
+    width: 290px;
+    height: 30px;
+    background-color: rgb(179, 19, 19);
+    position: absolute;
+    left: 15%;
+    top: 58%;
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 10px;
+    transition: transform 1s ;
+}
+.youtube{
+    text-decoration: none;
+    font-family: monospace;
+    font-size: x-large;
+    color: white;
+}
+.youtubeICON{
+    position: absolute;
+    left: 19%;
+    top: -3%;
+    transition: transform 1s ;
+}
+
+.button:hover{
+    transform: scale(1.2);
+}
+
+.ukazky1arnold{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    opacity:1;
+}
+
+.ukazky1arnold1{
+ position: relative;
+border-radius: 10px;
+left: 10%;
+transition: transform 2s;
+}
+.ukazky2arnold1{
+position: relative;
+border-radius: 10px;
+left: 15%;
+transition: transform 2s;
+}
+.ukazky3arnold1{
+    position: relative;
+ border-radius: 10px;
+ left: 20%;
+ transition: transform 2s;
+}
+.ukazky4arnold1{
+    position: relative;
+border-radius: 10px;
+left: 25%;
+transition: transform 2s;
+}
+.ukazky5arnold1{
+    position: relative;
+    border-radius: 10px;
+    left: 30%;
+    transition: transform 2s;
+}
+
+.ukazky1arnold1:hover{
+    transform: scale(1.2);
+}
+.ukazky2arnold1:hover{
+    transform: scale(1.2);
+}
+.ukazky3arnold1:hover{
+    transform: scale(1.2);
+}
+.ukazky4arnold1:hover{
+    transform: scale(1.2);
+}
+.ukazky5arnold1:hover{
+    transform: scale(1.2);
+}
+.nazevarnold{
+position: absolute;
+font-size:450%;
+font-family: sans-serif;
+color: white;
+font-weight: bold;
+z-index: 2;
+left: 45%;
+top: 10%;
+text-align: center;
+width: 50%;
+}
+
+.arnolddiplom{
+    position: absolute;
+    top: 70%;;
+    left: 62%;
+    border-right:solid grey 2px;
+    height: 25px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 10px;
+}
+
+.arnoldporadce{
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    border-right:solid grey 2px;
+    height: 25px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding-left: 6px;
+    padding-right: 10px;
+}
+
+.arnoldtrener{
+    position: absolute;
+    top: 70%;
+    left: 78%;
+    border-right:solid grey 2px;
+    height: 25px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.trenerarnold{
+    position: absolute;
+    font-size:350%;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    z-index: 2;
+    left: 48%;
+    top: 15%;
+    text-align: center;
+    width: 50%;
+    }
+    
+.arnoldpopis{
+    position: absolute;
+    top: 25%;
+    left: 60.3%;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-weight:bold; 
+    border-left:solid white 2px;
+    width: 25%;
+    font-size: larger;
+    padding-left:10px ;
+    text-shadow: rgb(233, 248, 146) 4px 4px 12px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(233, 248, 146);
+}
+.white{
+    color: white;
+    padding-bottom:10px ;
+}
+
+
+.arnoldobrz{
+    position: absolute;
+    left: 15.6%;
+    top: 75%;
+    color: white;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.arrow1{
+    width: 120px;
+    height: 120px;
+    display: block;
+    float: left;
+    mix-blend-mode: darken;
+}
+.formularbg{
+    background-color: rgb(52, 104, 110);
+}
+
+
+.instagram{
+    width: 3%;
+    position: absolute;
+    top: 88.3%;
+    left: 45%;
+    transition: transform .2s;
+}
+
+.twitter{
+    width: 3%;
+    position: absolute;
+    top: 88.3%;
+    left: 35%;
+    transition: transform .2s;
+}
+.youtube12{
+    width: 3%;
+    position: absolute;
+    top:88.3%;
+    left: 40%;
+    transition: transform .2s;
+}
+
+.wheretofind{
+    color: rgb(113, 132, 235);
+    z-index: 1;
+    position: absolute;
+    left: 25%;
+    top: 90%;
+    font-size: x-large;
+    font-family: Arial,Helvetica,sans-serif;
+}
+
+.instagram:hover{
+    transform: scale(1.2);
+}
+.twitter:hover{
+    transform: scale(1.2);
+}
+.youtube12:hover{
+    transform: scale(1.2);
+}
+
+
+.name{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    z-index: 3;
+}
+.name2{
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    z-index: 3;
+    
+}
+.menu2{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    top:12.5%;
+    left: 5%;
+}
+.menu2 ul{
+    display: flex;
+    list-style: none;
+    }
+.menu2 ul li{
+    position: relative;
+    margin: 0 60px;
+    }
+    
+.menu2 ul li a{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+        font-size: x-large;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+.menu2 ul li ::before{
+        content: '';
+        position: absolute;
+        width:0;
+        height:2px;
+        background-color: #000000;
+        left: 50%;
+        bottom: -10px;
+        transition: 0.3s all ease-in-out;
+        }
+
+.menu2 ul li:hover ::before{
+        width: 100%;
+        left: 0;
+}
+
+.formularbg2{
+    background-image: url(tabletscreen.jpg);
+    background-size: cover;
+    background-color: rgb(102, 93, 93);
+    width: 80%;
+    height: 95%; 
+    border-radius: 10%; 
+    border: 2px solid black;
+    position: absolute;
+    opacity: 0.8;
+    left: 10%;
+    top: 2%;
+    border: none;
+    z-index: -1;
+}
+
+
+.form{
+    width: 90%;
+    max-width: 600px;
+
+}
+
+.name{
+    position: absolute;
+    width: 20%;
+    left: 30%;
+    top: 25%;
+}
+.fname{
+    position: absolute;
+    width: 20%;
+    left: 51%;
+    top: 25%;
+}
+.tel{
+    position: absolute;
+    width: 41.1%;
+    left: 30%;
+    top: 30%;
+}
+.email{
+    position: absolute;
+    width: 41.1%;
+    left: 30%;
+    top: 35%;   
+}
+
+.text{
+    position: absolute;
+    width: 41.1%;
+    left: 30%;
+    top: 40%;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 3px solid #513ea3;
+    color: #000000;
+    background: transparent;
+    font-size: 15px;
+}
+.button1{
+    padding: 10px 0;
+    color: #000000;
+    outline: 0;
+    background:transparent;
+    border: 3px solid #513ea3;
+    font-size: large;
+    cursor: pointer;
+    position: absolute;
+    width: 41.1%;
+    left: 30%;
+    top: 60%;
+
+}
+
+.input-group2{
+    width: 20%;
+}
+
+.message{
+position: absolute;
+left: 48%;
+top: 70%;
+font-size: xx-large;
+font-weight: bolder;
+color: black;
+z-index: 3;
+}
